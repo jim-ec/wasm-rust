@@ -6,4 +6,5 @@ A minimal example for compiling a Rust library to WebAssembly.
 
 ```
 npm run build
+npm run main
 ```
