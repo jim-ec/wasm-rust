@@ -1,0 +1,12 @@
+{
+  "name": "wasm-test",
+  "version": "0.0.1",
+  "main": "dist/main/wasm_test.js",
+  "module": "dist/module/wasm_test.js",
+  "types": "dist/module/wasm_test.d.ts",
+  "scripts": {
+    "main": "node main.js",
+    "build": "wasm-pack build --dev --target nodejs --out-dir dist/main --out-name wasm_test",
+    "build:module": "wasm-pack build --release --target bundler --out-dir dist/module --out-name wasm_test"
+  }
+}
