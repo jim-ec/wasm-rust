@@ -7,7 +7,9 @@
   "scripts": {
     "main": "node main.js",
     "build": "wasm-pack build --dev --target nodejs --out-dir dist/main --out-name wasm_test",
-    "build:module": "wasm-pack build --release --target bundler --out-dir dist/module --out-name wasm_test"
+    "build:module": "wasm-pack build --release --target bundler --out-dir dist/module --out-name wasm_test",
+    "build:browser": "wasm-pack build --release --target browser --out-dir dist/browser --out-name wasm_test",
+    "build:web": "wasm-pack build --release --target web --out-dir dist/web --out-name wasm_test"
   },
   "devDependencies": {
     "wasm-pack": "^0.11.1"
